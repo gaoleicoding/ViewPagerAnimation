@@ -91,6 +91,7 @@ public class MyJazzyViewPager extends ViewPager
 			 /** 
              * x偏移量： 如果手指从右到左的滑动（切换到后一个）：0-720 如果手指从左到右的滑动（切换到前一个）：720-0 
              */ 
+			 mTrans = -getWidth() - getPageMargin() + positionOffsetPixels;
 			//利用nineoldandroid.jar控制右侧滑动动画
 			ViewHelper.setTranslationX(right, mTrans);
 		}
